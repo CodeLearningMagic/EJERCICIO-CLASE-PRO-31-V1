@@ -1,16 +1,21 @@
-this.smokeImage = loadImage("sprites/smoke.png");
-
-this.trajectory =[];
-
 var position = [this.body.position.x, this.body.position.y];
 this.trajectory.push(position)
 
+
+this.smokeImage = loadImage("sprites/smoke.png");
 
 
 
 for(var i=0; i<this.trajectory.length; i++){
       image(this.smokeImage, this.trajectory[i][0], this.trajectory[i][1]);
     }
+
+this.trajectory =[];
+
+
+
+
+
     
     
     
